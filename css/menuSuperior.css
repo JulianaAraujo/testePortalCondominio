@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear{
+    clear: both;
+  }
+  
+  
+  .slide-toggle{
+    display: none;
+  }
+  
+  .slidemenu{
+    max-width: 100%;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    font-size: 25px;
+  }
+  
+  .slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+  
+  }
+  
+  .slidemenu label:hover{
+    cursor: pointer;
+    color: #3B3B3B;
+  }
+  
+  .slidemenu label span{
+    display: block;
+    padding: 5px;  
+    /* font-size: 20px;   */
+  }
+  
+  .slidemenu label .icon{
+    border: solid 2px #3B3B3B;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+  }
+  
+  .slider .bar{
+    width: 25%;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+  .footer{
+      align-items: center;
+      width: 100%;
+  }
+
+  .btn-secondary {
+    text-decoration: white;  
+    border-radius: 20px;
+    height:35px;
+    width:140px;
+    background-color: #3B3B3B;
+  }
+  
+  .h1{
+      text-align: center;
+  }
+
+  .nameUser{
+      text-align: right;
+  }
+
+@media(max-width: 900px ){
+  .slidemenu>label {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 510px ){
+  .slidemenu>label {
+    font-size: 15px;
+  }
+}
