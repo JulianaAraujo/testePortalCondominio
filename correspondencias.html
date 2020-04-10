@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha Casa</title>
         <!-- estilo interior minha casa -->
-        <link rel="stylesheet" href="./css/minhaCasa.css">
+        <link rel="stylesheet" href="./css/correspondencias.css">
         <!-- estilo externo do menu lateral -->
         <link rel="stylesheet" href="./css/menuLateralBase.css">
         <!-- estilo do header -->
@@ -307,103 +307,56 @@
                 </div>
             </nav>
 
-            <!-- botao para adicionar cadastro -->
-            <div class="areaBotaoCad">
-                <div>
-                    <a href="#" class="btn btn-secondary btn-sm" id="botaoCadastro">
-                        Novo Cadastro</a>
-
-                </div>
-            </div>
+            
 
             <!-- area do centro da tela -->
-            <div class="centroTelaMoradores">
-               
-                <!-- cards dos moradores -->
-                
-                <div class="cardMorador">
-
-                    <!-- div da foto do morador -->
-                    <div class="imgMorador">
-                        <img src="./img/user/geraldo.png"  alt="...">
-                    </div>
-
-                    <!-- area que organiza os itens do texto do card -->
-                    <div class="corpoCard">
-
-                        <!-- div que contem o nome do morador e os icones para fazer alteração -->
-                        <div class="tituloAndTools">
-                            <div class="card-titulo">Geraldo de Rivia</div>
-                            <div class="toolsCardMorador">
-                                <img src="./img/icon/edit.svg" alt="">
-                                <img src="./img/icon/trash.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- divs com o texto dentro do card, eram <p> mas ficava muito espaço entre as linhas-->
-                        <div class="card-text">
-                            <b>Data de Nascimento:</b> 14/11/1980</div>
-                        <div class="card-text">
-                            <b>RG:</b> 44.398.239-4</div>
-                        <div class="card-text">
-                            <b>CPF:</b> 234.345.118-23</div>
-                    </div>
-
-                </div>
-
-                               
-                <div class="cardMorador">
-
-                    <div class="imgMorador">
-                        <img src="./img/user/jenifer.jpg"  alt="...">
-                    </div>
-
-                    <div class="corpoCard">
-
-                        <div class="tituloAndTools">
-                            <div class="card-titulo">Jenifer de Vengerberg</div>
-                            <div class="toolsCardMorador">
-                                <img src="./img/icon/edit.svg" alt="">
-                                <img src="./img/icon/trash.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="card-text">
-                            <b>Data de Nascimento:</b> 02/07/1985</div>
-                        <div class="card-text">
-                            <b>RG:</b> 54.223.112-9</div>
-                        <div class="card-text">
-                            <b>CPF:</b> 432.456.238-33</div>
-                    </div>
-
-                </div>
-                
-                <div class="cardMorador">
-
-                    <div class="imgMorador">
-                        <img src="./img/user/cirila.jpg"  alt="...">
-                    </div>
-
-                    <div class="corpoCard">
-
-                        <div class="tituloAndTools">
-                            <div class="card-titulo">Cirila Riannon</div>
-                            <div class="toolsCardMorador">
-                                <img src="./img/icon/edit.svg" alt="">
-                                <img src="./img/icon/trash.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="card-text">
-                            <b>Data de Nascimento:</b> 23/08/1997</div>
-                        <div class="card-text">
-                            <b>RG:</b> 54.323.455-9</div>
-                        <div class="card-text">
-                            <b>CPF:</b> 653.345.538-43</div>
-                    </div>
-
-                
-            </div>
-            </div>
+            <section class="correspondencia-section">
+                <article>
+                    <div class="correspondencia-title">Recebido em</div>
+                    <div class="date">XX/xx/xxxx</div>
+                    <div class="date">XX/xx/xxxx</div>
+                    <div class="date">XX/xx/xxxx</div>
+                    <div class="date">XX/xx/xxxx</div>
+                    <div class="date">XX/xx/xxxx</div>
+                    <div class="date" id="last-child">XX/xx/xxxx</div>
+                </article>
+                <article>
+                    <div class="correspondencia-title">Tipo</div>
+                    <div class="type">Encomenda</div>
+                    <div class="type">Carta</div>
+                    <div class="type">Mala Direta</div>
+                    <div class="type">Encomenda</div>
+                    <div class="type">Mala Direta</div>
+                    <div class="type" id="last-child">Encomenda</div>
+                </article>
+                <article>
+                    <div class="correspondencia-title">Remetente</div>
+                    <div class="sender">Remetente A</div>
+                    <div class="sender">Remetente B</div>
+                    <div class="sender">Remetente C</div>
+                    <div class="sender">Remetente D</div>
+                    <div class="sender">Remetente E</div>
+                    <div class="sender" id="last-child">Remetente E</div>
+                </article>
+                <article>
+                    <div class="correspondencia-title">Destinatário</div>
+                    <div class="receiver">Destinatário A</div>
+                    <div class="receiver">Destinatário B</div>
+                    <div class="receiver">Destinatário C</div>
+                    <div class="receiver">Destinatário D</div>
+                    <div class="receiver">Destinatário E</div>
+                    <div class="receiver" id="last-child">Destinatário F</div>
+                </article>
+                <article>
+                    <div class="correspondencia-title">Observações</div>
+                    <div class="note">...</div>
+                    <div class="note">...</div>
+                    <div class="note">...</div>
+                    <div class="note">...</div>
+                    <div class="note">...</div>
+                    <div class="note" id="last-child">...</div>
+                </article>
+            </section>
 
         </div>
 
