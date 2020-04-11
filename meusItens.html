@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vizinhança</title>
         <!-- estilo interior minha casa -->
-        <link rel="stylesheet" href="./css/classificados.css">
+        <link rel="stylesheet" href="./css/meusItens.css">
         <!-- estilo externo do menu lateral -->
         <link rel="stylesheet" href="./css/menuLateralBase.css">
         <!-- estilo do header -->
@@ -297,53 +297,15 @@
                 </div>
             </nav>
 
-            <nav class="navbar navbar-light campo-pesquisa" id="areaFiltro">
-              
-                <div class="nomeCampoPesquisa">
-                    Filtrar Classificados
+             <!-- botao para adicionar cadastro -->
+            <div class="areaBotaoCad">
+                <div>
+                    <a href="#" class="btn btn-secondary btn-sm" id="botaoCadastro">
+                        Novo Cadastro</a>
+
                 </div>
-                <div class="areaCamposGrandes">
-                    <div class="campoSearch" style="width: 30%;">
-                        <form class="form-inline" >
-                            <input
-                                class="form-control"
-                                style="width: 100%;"
-                                type="search"
-                                placeholder="Palavra-Chave"
-                                aria-label="Search">
-                        </form>
-                    </div>
-                    <div class="btn-group"style="width: 30%;">
-                        <button class="btn btn-secondary text-left btn-sm" id="btn-pesquisa"  style="width: 100%;" type="button">
-                          Categoria
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="btn-pesquisa" style="width: min-content;"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Manutenção</a>
-                            <a class="dropdown-item" href="#">Festas</a>
-                            <a class="dropdown-item" href="#">Aulas</a>
-                        </div>
-                      </div>
-                      <div class="btn-group" style="width: 30%;">
-                        <button class="btn btn-secondary text-left btn-sm" id="btn-pesquisa" style="width: 100%;" type="button">
-                          Tipo
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="btn-pesquisa" style="width: min-content;"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Manutenção</a>
-                            <a class="dropdown-item" href="#">Festas</a>
-                            <a class="dropdown-item" href="#">Aulas</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="areaBotaoSearch">
-                    <button class="btn  my-2 my-sm-0" id="botaoSearch" type="submit">Filtrar</button>
-                </div>
-            </nav>
+            </div>
+
 
             <!-- area do centro da tela -->
             <div class="centroTelaClassificados">
@@ -351,7 +313,7 @@
                 <!-- div para organizar os cards -->
                 <div class="listaClassificados">
 
-                    <!-- cards dos classificados -->
+                    <!-- cards dos meus ítens -->
                     <div class="card classificado">
                         <img
                             class="card-img-top"
@@ -375,72 +337,7 @@
                             <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
                         </div>
                     </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/bolo"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Bolo sob encomenda</div>
-                            <div class="card-subtitulo">Maria B. (D-44)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/aulas.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Aulas de Matemática</div>
-                            <div class="card-subtitulo">Paula M. (A-63)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/baba.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Babá</div>
-                            <div class="card-subtitulo">Bárba C. (A-33)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/organizador.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Organizador de Eventos</div>
-                            <div class="card-subtitulo">João A. (D-91)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/marmita.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Mármitas Saudáveis</div>
-                            <div class="card-subtitulo">Antônio O. (C-101)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/dog.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Passeador de Cães</div>
-                            <div class="card-subtitulo">Daniel S. (B-74)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
