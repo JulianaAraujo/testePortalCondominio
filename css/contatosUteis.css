@@ -1,0 +1,165 @@
+@font-face {
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'Robot-normal';    
+    font-weight: normal;
+}
+@font-face {
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+    font-family: 'Robot-ligth';    
+    font-weight: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* stilo botão */
+
+.areaBotaoCad {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    padding-right: 2vw;
+    align-items: center;
+    /* padding-bottom: 10px; */
+
+}
+
+#botaoCadastro {
+    background-color: #3B3B3B;
+    width: 226px;
+    height: 44px;
+    border-radius: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+    align-items: center;
+    /* depois que inlcui o href no botão o texto subiu, coloquei esse padding para o texto ficar no meio */
+    padding-top: 8px;
+
+}
+
+@media(max-width:765px) {
+    #botaoCadastro {
+        width: auto;
+        font-size: 10px;
+        /* depois que inlcui o href no botão o texto subiu, coloquei esse padding para o texto ficar no meio */
+    padding-top: 12px;
+    }
+}
+
+/* fim stilo botao */
+
+
+/* stilo dos cards do morador */
+
+
+
+.centroTelaContatosUteis{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    /* align-items: center; */
+} 
+
+
+
+.centroTelaContatosUteis>div{
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.imgContato>img{
+    
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border: 4px solid #878787;
+}
+
+
+.cardContato{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.12), -6px -6px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cardOutrosContatos{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.12), -6px -6px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cardContato>div{
+padding: 1rem;
+}
+
+
+.corpoCard{
+    flex-direction: row;
+    text-align: center;
+    
+}
+
+.card-titulo ,.card-tituloOC{
+    font-family: "Robot-normal";
+    
+    
+}
+/*
+.card-tituloOC{
+    display: flex;
+    text-align: center;
+
+} */
+
+.card-text{
+
+    font-family: "Robot-ligth";
+}
+
+
+
+.toolsCardPrestServ>img{
+    padding-left: 0.3rem;
+}
+
+@media (max-width: 450px){
+    .imgPrestServ>img{
+        width: 6rem;
+    height: 6rem;
+
+    }
+}

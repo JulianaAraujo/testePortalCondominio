@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha Casa</title>
         <!-- estilo interior minha casa -->
-        <link rel="stylesheet" href="./css/prestadoresDeServico.css">
+        <link rel="stylesheet" href="./css/contatosUteis.css">
         <!-- estilo externo do menu lateral -->
         <link rel="stylesheet" href="./css/menuLateralBase.css">
         <!-- estilo do header -->
@@ -316,80 +316,77 @@
                 </div>
             </div>
 
-            <!-- area do centro da tela -->
-            <div class="centroTelaPrestServico">
+            <div class="centroTelaContatosUteis">
+
+                <!-- card do contato -->
+
+                <div class="cardContato ">
+
+                    <!-- div da foto do morador -->
+                    <div class="imgContato">
+                        <img src="./img/user/joao_das_neves.jpg" alt="...">
+                    </div>
+
+                    <!-- area que organiza os itens do texto do card -->
+                    <div class="corpoCard">
+
+                        <!-- div que contem o nome do morador e os icones para fazer alteração -->
+                        
+                            <div class="card-titulo"><b>João das Neves</b></div>
+                            <div class="card-titulo">Seu Síndico</div>                    
+                        <!-- divs com o texto dentro do card, eram <p> mas ficava muito espaço entre as
+                        linhas-->
+                        
+                        <div class="card-text">
+                            (11) 987678-8277
+                            </div>
+                        <div class="card-text">joaodasneves@gmail.com</div>
+                    </div>
+                    <div class="iconesContato">
+                            <img src="./img/icon/phone_in_talk.svg" alt="">
+                            <img src="./img/icon/mail.svg" alt="">
+                            <img src="./img/icon/whatsApp.svg" alt="">
+
+                            </div>
+                    </div>
+
+                
                
-                <!-- cards dos moradores -->
-                
-                <div class="cardPrestServico">
-
-                    <!-- div da foto do morador -->
-                    <div class="imgPrestServ">
-                        <img src="./img/user/jackson.png"  alt="...">
-                    </div>
+               <!-- card com outros contatos -->
+                <div class="cardOutrosContatos ">                 
 
                     <!-- area que organiza os itens do texto do card -->
-                    <div class="corpoCard">
+                    <div class="corpoCardOutrosContatos">
 
-                        <!-- div que contem o nome do morador e os icones para fazer alteração -->
-                        <div class="tituloAndTools">
-                            <div class="card-titulo">Jackson Bardo</div>
-                            <div class="toolsCardPrestServ">
-                                <img src="./img/icon/edit.svg" alt="">
-                                <img src="./img/icon/trash.svg" alt="">
-                            </div>
+                        <!-- div que contem o nome do contato e os icones para fazer alteração -->
+                        
+                            <div class="card-tituloOC">Outros Contatos</div>
+                        
+                        <!-- divs com o texto dentro do card, eram <p> mas ficava muito espaço entre as
+                        linhas-->
+                        <!-- div para agrupar os textos e ficarem do lado direito do card -->
+                        <div class=textoCardOutrosContatos>
+                        <div class="card-text">
+                            <b>Data de Nascimento:</b>
+                            14/11/1983</div>
+                        <div class="card-text">
+                            <b>RG:</b>
+                            45.334.657-9</div>
+                        <div class="card-text">
+                            <b>CPF:</b>
+                            345-654-758-66</div>
+                        <div class="card-text">
+                            <b>Ocupação:</b>
+                            Professor de Musica</div>
                         </div>
-                        <!-- divs com o texto dentro do card, eram <p> mas ficava muito espaço entre as linhas-->
-                        <div class="card-text">
-                            <b>Data de Nascimento:</b> 14/11/1983</div>
-                        <div class="card-text">
-                            <b>RG:</b> 45.334.657-9</div>
-                        <div class="card-text">
-                            <b>CPF:</b> 345-654-758-66</div>
-                        <div class="card-text">
-                                <b>Ocupação:</b> Professor de Musica</div>
                     </div>
 
                 </div>
+               
 
-                <div class="cardPrestServico">
-
-                    <!-- div da foto do morador -->
-                    <div class="imgPrestServ">
-                        <img src="./img/user/tissaia.jpg"  alt="...">
-                    </div>
-
-                    <!-- area que organiza os itens do texto do card -->
-                    <div class="corpoCard">
-
-                        <!-- div que contem o nome do morador e os icones para fazer alteração -->
-                        <div class="tituloAndTools">
-                            <div class="card-titulo">Tissaia de Vries</div>
-                            <div class="toolsCardPrestServ">
-                                <img src="./img/icon/edit.svg" alt="">
-                                <img src="./img/icon/trash.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- divs com o texto dentro do card, eram <p> mas ficava muito espaço entre as linhas-->
-                        <div class="card-text">
-                            <b>Data de Nascimento:</b> 14/11/1972</div>
-                        <div class="card-text">
-                            <b>RG:</b> 34.567.345-3
-                        <div class="card-text">
-                            <b>CPF:</b> 232.463.248-45</div>
-                        <div class="card-text">
-                                <b>Ocupação:</b> Terapêuta</div>
-                    </div>
-
-                </div>
-
-                               
-                
             </div>
 
         </div>
-       
-    </div>
 
         <footer class="py-2 footer">
             <div class="container text-center" id="footerText">
@@ -401,43 +398,41 @@
         </footer>
 
     </body>
-        <!-- script para fazer o menu mobile aparecer -->
-        <script>
-            function openNav() {
-                document
-                    .getElementById("mySidenav")
-                    .style
-                    .width = "300px";
-                document
-                    .getElementById("main")
-                    .style
-                    .marginLeft = "300px";
-            }
+    <!-- script para fazer o menu mobile aparecer -->
+    <script>
+        function openNav() {
+            document
+                .getElementById("mySidenav")
+                .style
+                .width = "300px";
+            document
+                .getElementById("main")
+                .style
+                .marginLeft = "300px";
+        }
 
-            function closeNav() {
-                document
-                    .getElementById("mySidenav")
-                    .style
-                    .width = "0";
-                document
-                    .getElementById("main")
-                    .style
-                    .marginLeft = "0";
-            }
-        </script>
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+        function closeNav() {
+            document
+                .getElementById("mySidenav")
+                .style
+                .width = "0";
+            document
+                .getElementById("main")
+                .style
+                .marginLeft = "0";
+        }
+    </script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-
-
-    </html>
+</html>
