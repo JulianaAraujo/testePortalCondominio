@@ -31,62 +31,28 @@
     font-family: 'Roboto-Regular';    
     font-weight: normal;
 }
+/* Menu Lateral */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: white;
-    position: absolute;
-
-}
-
-.menu {
-    min-height:650px;
-    width: 320px;
-    height: 96vh;
-    padding: 5px 25px 5px 25px;
-    background-color: #3B3B3B;
-    border-radius: 0 25px 25px 0;
-    position: absolute;
-    z-index: 1;
-    position: fixed;
-}
-
-.menu .logo-tipo{
-    width: 100%;
-    height: 160px;
-    margin-top: 48px;
-}
-
-.menu div .img{
+.logotipoMenu{
     background-image: url("../img/logo/logo-menu.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    width: 100%;
-    height: 90px;
+    width: 90%;
+    height: 80px;
     
 }
-
-.menu div .user-name {
+.user-name {
     display: none;
 }
 
-.menu .menu-dois .menu-dois-ul {
+.menu-dois-ul {
     padding: 10px;
 }
 
-.menu .menu-dois .principal-menu a,
-.menu .menu-dois .principal-menu
+.menu-dois .principal-menu a,
+.menu-dois .principal-menu
 {
     font-family: Montserrat-Light;
     text-transform: uppercase;
@@ -96,26 +62,29 @@ body{
     text-decoration: none;
 }
 
-.menu .menu-dois .principal-menu ul {
+
+.menu-dois .principal-menu ul {
     display: none;
 }
 
-.menu .menu-dois .principal-menu ul li a{
+.menu-dois .principal-menu ul li a{
     text-transform: lowercase;
     font-family: 'Roboto-Light';
     color:#C4C4C4;
 }
 
-.menu .menu-dois .principal-menu .li-a {
+
+.menu-dois .principal-menu .li-a {
     padding-left: 50px;
 }
 
-.menu .menu-dois .principal-menu {
+
+.menu-dois .principal-menu {
     position: relative;
     margin-bottom: 10px;
     padding: 10px;
 }
-.menu .menu-dois .principal-menu svg{
+.menu-dois .principal-menu svg{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -124,23 +93,25 @@ body{
     fill: #C4C4C4;
 }
 
-.menu .menu-dois .principal-menu .second-menu {
+
+.menu-dois .principal-menu .second-menu {
     padding: 10px 0 8px 30px;
 
 }
 
-.menu .menu-dois .principal-menu  ul{
-    width: 261px;
+.menu-dois .principal-menu  ul{
+    width: 320px;
     /* height: 165px; */
     padding: 15px 0 0px 20px;
     list-style-type: none;
 }
 
-.menu .menu-dois .principal-menu input[type="checkbox"]:checked ~ ul {
+
+.menu-dois .principal-menu input[type="checkbox"]:checked ~ ul {
     display: block;
 }
 
-.menu .menu-dois .principal-menu label:after {
+.menu-dois .principal-menu label:after {
     content:'\203A';
     float: right;
     font-size: 25px;
@@ -155,13 +126,9 @@ body{
     top: 6px;
 }
 
-.menu .menu-dois .principal-menu input[type="checkbox"]:checked ~ label:after {
-    content: '\2039';
-    font-size: 25px;
-    font-weight: bold;
-}
 
-.menu .menu-dois .principal-menu input {
+
+.menu-dois .principal-menu input {
     position: absolute;
     top: 0;
     left: 0;
@@ -172,88 +139,15 @@ body{
     opacity: 0;
 }
 
- #check-menu[type="checkbox"]{
-    display: none;
-}
-
-.menu-label{
-    padding: 15px;
-    position: absolute;
-}
-
-/* Início do estilo do main (bem-vindo) */
-
-.main {
-    position: relative;
-    width: 100%;
-}
-
-.resumo-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.main .resumo-section div {
-    width: 100%;
-    height: 216px;
-    top: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main .resumo-section .resumo {
-    width: 45%;
-    height: 190px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-
-}
-
-.main .resumo-comunicados {
-    width: 95%;
-    height: 190px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
-}
-
-.main .resumo-section .resumo-tema {
-    font-family: Roboto-Regular;
-    text-transform: uppercase;
-    font-weight: bold;
-    justify-content: start;
-    color: #3B3B3B;
-    width: 95%;
-    height: 30px;
-    margin: 10px 16px 0;
-    border-bottom: 1px solid #3B3B3B;
-}
-
-.main .resumo-section .resumo-tema-comunicados {
-    font-family: Roboto-Regular;
-    text-transform: uppercase;
-    font-weight: bold;
-    justify-content: start;
-    color: #3B3B3B;
-    width: 98%;
-    height: 30px;
-    margin: 10px 16px 0;
-    border-bottom: 1px solid #3B3B3B;
-}
 
 
-@media(max-width: 768px){
+
+@media(max-width: 1024px){
 
     .menu {
-        width: 320px;
+        width: 250px;
         height: 100vh;
-        left: -322px;
+        /* left: -32px; */
         padding: 5px 25px 5px 25px;
         background-color: #3B3B3B;
         position: relative;
@@ -261,19 +155,10 @@ body{
         border-radius: 0 0 25px 0;
     }
 
-    #check-menu[type="checkbox"]{
-        display: none;
-        transition: all 0.7s;
-    }
 
-    #check-menu[type="checkbox"]:checked ~ .menu {
-        transform: translateX(320px);
-        transition: all 0.7s;
-        position: relative;
-    }
 
     #check-menu:checked + .menu-label {
-        left: 280px;
+        left: 320px;
         transition: all 0.7s;
         width: 90px;
         height: 80px;
@@ -282,7 +167,7 @@ body{
     
     .menu-label {
         left: -17px;
-        width: 100px;
+        width: 120px;
         height: 80px;
         padding-left: 32px;
         background-color: #3B3B3B;
@@ -310,18 +195,7 @@ body{
         
     }
 
-    /* Icone menu girar horário 360g quando for clicado */
-    #check-menu:checked + .menu-label .hamburger {
-        transform: rotate(180deg);
-        transition: all 0.7s;
-    }
-
-
-    /* Primeria div girar para virar um X quadno clicado */
-    #check-menu:checked + .menu-label .menu-icon-mobile:first-child{
-        position: absolute;
-        transform: rotate(135deg);
-    }
+    
 
     /* Sumir com a div central */
     #check-menu:checked + .menu-label #icon-midle {
@@ -350,7 +224,7 @@ body{
         border-bottom: 1px solid #C4C4C4;
     }
     
-    .menu div .img{
+    .menu div .imgUser{
         background-image: url("../img/logo/user.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -385,11 +259,11 @@ body{
         color: #C4C4C4;
         list-style-type: none;
         text-decoration: none;
-        padding: 0px;
+        padding-left: px;
     }
 
     .menu .menu-dois .principal-menu ul{
-        padding: 0px 0 0 10px;
+        padding: 0px 0 0 8px;
     }
 
     .menu .menu-dois .principal-menu .li-a {
@@ -440,7 +314,239 @@ body{
         background-size: cover;
     }
 
-    
 
 
 }
+
+
+/* Menu Superior */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear{
+    clear: both;
+  }
+  
+  
+  .slide-toggle{
+    display: none;
+  }
+  
+  .slidemenu{
+    max-width: 100%;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    font-size: 25px;
+  }
+  
+  .slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+  
+  }
+  
+  .slidemenu label:hover{
+    cursor: pointer;
+    color: #3B3B3B;
+  }
+  
+  .slidemenu label span{
+    display: block;
+    padding: 5px;  
+    /* font-size: 20px;   */
+  }
+  
+  .slidemenu label .icon{
+    border: solid 2px #3B3B3B;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+  }
+  
+  .slider .bar{
+    width: 25%;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+  .footer{
+      align-items: center;
+      width: 100%;
+  }
+
+  .btn-secondary {
+    text-decoration: white;  
+    border-radius: 20px;
+    height:35px;
+    width:140px;
+    background-color: #3B3B3B;
+  }
+  
+  .h1{
+      text-align: center;
+  }
+
+  .nameUser{
+      text-align: right;
+  }
+
+@media(max-width: 900px ){
+  .slidemenu>label {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 510px ){
+  .slidemenu>label {
+    font-size: 15px;
+  }
+}
+
+/* estilo menu mobile */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-left .5s;
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+
+
+/* lista estilo menu lateral fixo */
+
+
+  .sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 320px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #3B3B3B; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	border-radius: 0 25px 25px 0;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+  @media (min-width:1024px){
+	.main {
+		margin-left: 310px; /* Same as the width of the sidebar */
+		padding: 0px ;
+	  }
+  }
+
+  @media(max-width:1024px){
+	  #menuLateralFixo{
+		  display: none;
+	  }
+  }
