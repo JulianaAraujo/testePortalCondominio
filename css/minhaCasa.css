@@ -21,14 +21,12 @@ html {
 }
 
 body {
-    display: flex;
+   
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
+    background: #fafafa
 }
 
-footer {
-    margin-top: auto;
-}
 
 .main {
     display: flex;
@@ -76,15 +74,14 @@ footer {
 /* stilo dos cards do morador */
 
 
-
 .centroTelaMoradores{
     
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
+    min-height: 100%;
     
 } 
-
 
 
 .centroTelaMoradores>div{
@@ -136,12 +133,10 @@ padding: 1rem;
 }
 
 
-
 .card-text{
 
     font-family: "Robot-ligth";
 }
-
 
 
 .toolsCardMorador>img{
@@ -156,6 +151,7 @@ padding: 1rem;
     }
 }
 
+<<<<<<< HEAD
 /* estilo menu mobile */
 .sidenav {
 	height: 100%; /* 100% Full-height */
@@ -394,3 +390,5 @@ padding: 1rem;
 
 
 }
+=======
+>>>>>>> c998183ea8956310fc52a94e0b87c96fa358eec4
