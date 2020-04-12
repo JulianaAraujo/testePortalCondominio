@@ -26,9 +26,7 @@ body {
     min-height: 100%;
 }
 
-footer {
-    margin-top: auto;
-}
+
 
 .main {
     display: flex;
@@ -52,8 +50,8 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    padding-left: 15px;
 }
 
 
@@ -134,5 +132,6 @@ footer {
     background-color:white;
     border-width: 1px;
     border-color: black;
+    border-radius: 0 !important;
 
 }
