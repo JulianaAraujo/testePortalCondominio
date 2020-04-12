@@ -1,0 +1,396 @@
+@font-face {
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'Robot-normal';    
+    font-weight: normal;
+}
+@font-face {
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+    font-family: 'Robot-ligth';    
+    font-weight: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* stilo botão */
+
+.areaBotaoCad {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    padding-right: 2vw;
+    align-items: center;
+    /* padding-bottom: 10px; */
+
+}
+
+#botaoCadastro {
+    background-color: #3B3B3B;
+    width: 226px;
+    height: 44px;
+    border-radius: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+    align-items: center;
+    /* depois que inlcui o href no botão o texto subiu, coloquei esse padding para o texto ficar no meio */
+    padding-top: 8px;
+
+}
+
+@media(max-width:765px) {
+    #botaoCadastro {
+        width: auto;
+        font-size: 10px;
+        /* depois que inlcui o href no botão o texto subiu, coloquei esse padding para o texto ficar no meio */
+    padding-top: 12px;
+    }
+}
+
+/* fim stilo botao */
+
+
+/* stilo dos cards do morador */
+
+
+
+.centroTelaMoradores{
+    
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    
+} 
+
+
+
+.centroTelaMoradores>div{
+    margin: 1rem;
+}
+
+.imgMorador>img{
+    
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border: 4px solid #878787;
+}
+
+
+.cardMorador{
+    /* width: 48%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.12), -6px -6px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+.cardMorador>div{
+padding: 1rem;
+}
+
+
+.corpoCard{
+    width: 60%;
+}
+
+.card-titulo{
+    font-family: "Robot-normal";
+    
+    
+}
+
+.tituloAndTools{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+
+
+.card-text{
+
+    font-family: "Robot-ligth";
+}
+
+
+
+.toolsCardMorador>img{
+    padding-left: 0.3rem;
+}
+
+@media (max-width: 450px){
+    .imgMorador>img{
+        width: 6rem;
+    height: 6rem;
+
+    }
+}
+
+/* estilo menu mobile */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-left .5s;
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+
+
+/* lista estilo menu lateral fixo */
+
+
+  .sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 320px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #3B3B3B; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	border-radius: 0 25px 25px 0;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+  @media (min-width:1024px){
+	.main {
+		margin-left: 310px; /* Same as the width of the sidebar */
+		padding: 0px ;
+	  }
+  }
+
+  @media(max-width:1024px){
+	  #menuLateralFixo{
+		  display: none;
+	  }
+  }
+/* folha estilo header */
+@font-face {
+    src: url("fonts/Montserrat/Montserrat-Light.ttf");
+    font-family: 'Montserrat-Ligth';
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("fonts/Lato/Lato-Light.ttf");
+    font-family: 'Lato-Ligth';
+    font-weight: normal;
+}
+
+.mainHeader {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    flex-wrap: wrap;
+
+}
+
+.mainHeader > div {
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.titulo {
+    display: flex;
+}
+.avatar {
+    justify-content: flex-end;
+    font-family: 'Lato-Ligth';
+    font-size: 20px;
+}
+
+.nomePag {
+    text-transform: uppercase;
+    color: #3B3B3B;
+    font-family: 'Montserrat-Ligth';
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.finalidPag {
+    font-family: 'Lato-Ligth';
+    color: #878787;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.nameUser {
+    color: #3B3B3B;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+
+}
+
+.avatarUser {
+
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #878787;
+}
+
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+
+    
+}
+
+
+
+@media (min-width:769px) {
+    /* .mainHeader{
+        padding-left: 120px;
+    } */
+
+    /* #mainList{
+        padding-left: 120px;
+    } */
+
+}
+
+@media (max-width: 1024px) {
+    #tit {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        /* padding-top: 20px; */
+        /* align-items: center; */
+
+    }
+
+    #avat {
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    #tit > .nomePag {
+        font-size: 25px;
+        /* padding-top: 20px; */
+
+    }
+}
+
+@media(min-width:1023px) {
+    #icone-menu {
+        display: none;
+    }
+
+    .mainHeader {
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    
+
+
+}
