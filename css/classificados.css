@@ -36,6 +36,7 @@ body {
 
 /*estilo do header*/
 /* folha estilo header */
+
 @font-face {
     src: url("fonts/Montserrat/Montserrat-Light.ttf");
     font-family: 'Montserrat-Ligth';
@@ -118,25 +119,13 @@ body {
 
 
 
-@media (min-width:769px) {
-    /* .mainHeader{
-        padding-left: 120px;
-    } */
-
-    /* #mainList{
-        padding-left: 120px;
-    } */
-
-}
-
 @media (max-width: 1024px) {
     #tit {
         display: flex;
         width: 100%;
         flex-direction: column;
         position: relative;
-        /* padding-top: 20px; */
-        /* align-items: center; */
+       
 
     }
 
@@ -169,6 +158,7 @@ body {
 
 
 }
+/* fim do estilo do header */
 
 
 /* stilo dos cards classificados*/
@@ -191,14 +181,15 @@ body {
 }
 
 
-.listaClassificados>div{
+.listaClassificados>a{
     padding: 5px;
-    margin: 10px;
+    /* margin: px; */
     
 }
 
 
 .card{
+    padding: 5px;
     width: 12rem;
     display: flex;
     border-radius: 5px;
@@ -272,3 +263,124 @@ body {
     border-radius: 0 !important;
 
 }
+
+/* estilo modal card detalhes */
+
+#corpo-modal{
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .cardy{
+    width: 100%;
+  }
+  
+  .linha-vertical {
+    height: 90%;
+    /*Altura da linha*/
+    border-left: 2px solid;
+    /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    left: 35%;
+    /* top: 16%; */
+    /* bottom: 80%; */
+    color: rgb(172, 164, 164);
+    position: absolute;
+  }
+  
+  
+  #user{
+    margin-bottom: 52px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #878787;
+  }
+  
+  #fotoItem{
+    padding-left: 15px;
+  }
+  
+  .card-body{
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .card-body>div{
+    padding-right:5px;
+  }
+  
+  
+  .dadosUser{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    
+  
+  }
+#botaoModal{
+    display: none;
+}
+
+/*   
+  #botaoClassificado{
+    border-width: 0px;
+    padding: 5px;
+    margin: 10px;
+    border-style: 0px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.12), -6px -6px 8px rgba(0, 0, 0, 0.12); 
+    -webkit-appearance: none;
+    
+  }
+   */
+  
+  
+  
+  /* 
+  .classificadoBotao{
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+  /* 
+  button{
+    padding-left: 15px;
+    padding-right: 15px;
+  
+  } */
+  
+  p{
+    margin-bottom: 0 !important;
+  
+  }
+  .interesses, .quemSou{
+    font-size: 14px; 
+    padding-bottom: 10px;
+   }
+  
+  
+  
+  .interesses>button{
+    width: auto;
+    font-size: 12px;
+    border: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(155, 158, 163);
+    
+   }
+  
+  .nomeUser>h4{
+    border-bottom: 2px solid #878787;
+  }
+  
+  @media(max-width: 767px){
+    .linha-vertical{
+      display: none;
+    }
+  
+  }
