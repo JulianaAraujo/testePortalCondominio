@@ -101,3 +101,10 @@ p{
 .nomeUser>h4{
   border-bottom: 2px solid #878787;
 }
+
+@media(max-width: 767px){
+  .linha-vertical{
+    display: none;
+  }
+
+}
