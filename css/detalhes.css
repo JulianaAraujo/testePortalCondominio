@@ -21,6 +21,7 @@ flex-direction: column;
 
 
 #user{
+  margin-bottom: 52px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +62,10 @@ flex-direction: column;
   border-color: white;
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.12), -6px -6px 8px rgba(0, 0, 0, 0.12); 
   -webkit-appearance: none;
+  
 }
+
+
 
 
 /* 
@@ -88,7 +92,7 @@ p{
 
 
 .interesses>button{
-  
+  width: auto;
   font-size: 12px;
   border: 10px;
   border-radius: 15px;
