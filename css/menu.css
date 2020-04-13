@@ -1,0 +1,552 @@
+@font-face {
+    src: url(fonts/Montserrat/Montserrat-Light.ttf);
+    font-family: 'Montserrat-Light';    
+    font-weight: normal;
+}
+@font-face {
+    src: url(fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-family: 'Montserrat-SemiBold';    
+    font-weight: normal;
+}
+@font-face {
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+    font-family: 'Montserrat-Medium';    
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(fonts/Lato/Lato-Regular.ttf);
+    font-family: 'Lato-Regular';    
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+    font-family: 'Roboto-Light';    
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto-Regular';    
+    font-weight: normal;
+}
+/* Menu Lateral */
+
+.logotipoMenu{
+    background-image: url("../img/logo/logo-menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 90%;
+    height: 80px;
+    
+}
+.user-name {
+    display: none;
+}
+
+.menu-dois-ul {
+    padding: 10px;
+}
+
+.menu-dois .principal-menu a,
+.menu-dois .principal-menu
+{
+    font-family: Montserrat-Light;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #C4C4C4;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.menu-dois .principal-menu ul {
+    display: none;
+}
+
+.menu-dois .principal-menu ul li a{
+    text-transform: lowercase;
+    font-family: 'Roboto-Light';
+    color:#C4C4C4;
+}
+
+
+.menu-dois .principal-menu .li-a {
+    padding-left: 50px;
+}
+
+
+.menu-dois .principal-menu {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.menu-dois .principal-menu svg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    top: 5px;
+    fill: #C4C4C4;
+}
+
+
+.menu-dois .principal-menu .second-menu {
+    padding: 10px 0 8px 30px;
+
+}
+
+.menu-dois .principal-menu  ul{
+    width: 320px;
+    /* height: 165px; */
+    padding: 15px 0 0px 20px;
+    list-style-type: none;
+}
+
+
+.menu-dois .principal-menu input[type="checkbox"]:checked ~ ul {
+    display: block;
+}
+
+.menu-dois .principal-menu label:after {
+    content:'\203A';
+    float: right;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    position: absolute;
+    right: 16px;
+    top: 6px;
+}
+
+
+
+.menu-dois .principal-menu input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+
+
+
+@media(max-width: 1024px){
+
+    .menu {
+        width: 250px;
+        height: 100vh;
+        /* left: -32px; */
+        padding: 5px 25px 5px 25px;
+        background-color: #3B3B3B;
+        position: relative;
+        transition: all 0.7s;
+        border-radius: 0 0 25px 0;
+    }
+
+
+
+    #check-menu:checked + .menu-label {
+        left: 320px;
+        transition: all 0.7s;
+        width: 90px;
+        height: 80px;
+        z-index: -0;
+    }
+    
+    .menu-label {
+        left: -17px;
+        width: 120px;
+        height: 80px;
+        padding-left: 32px;
+        background-color: #3B3B3B;
+        transition: all 0.7s;
+        border-radius: 0 0 35px;
+    }
+
+     .menu-label .hamburger {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        /* Icone menu girar anti-horario 360g quando for clicado */
+        transform: rotate(-180deg);
+        transition: all 0.7s;
+    }
+
+     .menu-icon-mobile {
+        width: 90%;
+        height: 6px;
+        background-color: #C4C4C4;
+        border-radius: 50px;
+        
+    }
+
+    
+
+    /* Sumir com a div central */
+    #check-menu:checked + .menu-label #icon-midle {
+        background-color: #3B3B3B;
+        transition: 0.5s;
+    }
+
+    /* Aparecer com a div central */
+    #menu-label #icon-midle {
+        transition: 0.7s;
+        background-color: #C4C4C4;
+    }
+
+    /* Última div girar para virar um X quadno clicado */
+    #check-menu:checked + .menu-label .menu-icon-mobile:last-child{
+        position: absolute;
+        transform: rotate(-135deg);
+    }
+
+    .menu .logo-tipo{
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    
+    .menu div .imgUser{
+        background-image: url("../img/logo/user.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25%;        
+        border: 3px solid #C4C4C4;
+        text-align: center;
+        width: 25%;
+        height: 75px;
+        margin: auto 0 auto 0;
+        
+    }
+
+    .menu div .user-name {
+        width: 70%;
+        margin: auto 0 auto 0;
+        font-family: Lato-Regular;
+        font-size: 16px;
+        display: inline-flex;
+        color: #C4C4C4;
+    }
+
+    .menu .menu-dois .menu-dois-ul {
+        padding: 70px 0 0 0;
+    }
+
+    .menu .menu-dois .principal-menu a,
+    .menu .menu-dois .principal-menu
+    {
+        font-family: Montserrat-Light;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #C4C4C4;
+        list-style-type: none;
+        text-decoration: none;
+        padding-left: px;
+    }
+
+    .menu .menu-dois .principal-menu ul{
+        padding: 0px 0 0 8px;
+    }
+
+    .menu .menu-dois .principal-menu .li-a {
+        padding-left: 40px;
+    }
+
+    .menu .menu-dois .principal-menu svg{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top:-3px;    
+    }
+
+    .menu .menu-dois .principal-menu label:after {
+        content:'\203A';
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .menu .menu-dois .principal-menu input[type="checkbox"]:checked ~ label:after {
+        content: '\2039';
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;;
+        top: -6px;
+        right: 25px;
+    }
+
+    .menu-function {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-function .menu-function-image {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background-image: url("../img/icon/configuracoes2.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+}
+
+
+/* Menu Superior */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear{
+    clear: both;
+  }
+  
+  
+  .slide-toggle{
+    display: none;
+  }
+  
+  .slidemenu{
+    max-width: 100%;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    font-size: 25px;
+  }
+  
+  .slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+  
+  }
+  
+  .slidemenu label:hover{
+    cursor: pointer;
+    color: #3B3B3B;
+  }
+  
+  .slidemenu label span{
+    display: block;
+    padding: 5px;  
+    /* font-size: 20px;   */
+  }
+  
+  .slidemenu label .icon{
+    border: solid 2px #3B3B3B;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+  }
+  
+  .slider .bar{
+    width: 25%;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+  .footer{
+      align-items: center;
+      width: 100%;
+  }
+
+  .btn-secondary {
+    text-decoration: white;  
+    border-radius: 20px;
+    height:35px;
+    width:140px;
+    background-color: #3B3B3B;
+  }
+  
+  .h1{
+      text-align: center;
+  }
+
+  .nameUser{
+      text-align: right;
+  }
+
+@media(max-width: 900px ){
+  .slidemenu>label {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 510px ){
+  .slidemenu>label {
+    font-size: 15px;
+  }
+}
+
+/* estilo menu mobile */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-left .5s;
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+
+
+/* lista estilo menu lateral fixo */
+
+
+  .sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 320px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #3B3B3B; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	border-radius: 0 25px 25px 0;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+  @media (min-width:1024px){
+	.main {
+		margin-left: 310px; /* Same as the width of the sidebar */
+		padding: 0px ;
+	  }
+  }
+
+  @media(max-width:1024px){
+	  #menuLateralFixo{
+		  display: none;
+	  }
+  }
