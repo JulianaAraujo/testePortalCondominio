@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Minha Vizinhanca</title>
+        <title>Vizinhanca</title>
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="./css/classificados.css">
         <!-- css header, menu lateral, menu superior e footer -->
         <link rel="stylesheet" href="./css/headerMenuFooter.css">
+        <link rel="stylesheet" href="./css/detalhes.css">
+        <script src="https://kit.fontawesome.com/1dceb0bf4e.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet">
 
         <script
             defer="defer"
@@ -96,8 +101,8 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fas fa-file-alt"></i> 
-                             Solicitações</a>
+                            <i class="fas fa-file-alt"></i>
+                            Solicitações</a>
                     </li>
                     <li>
                         <a href="#">
@@ -118,21 +123,21 @@
             <div id="content">
 
                 <!-- botão para abrir e fechar o menu -->
-                <div class=botaoAbrireFechar>
-                <button type="button" id="sidebarCollapse" class="btn">
-                    <i class="fas fa-align-left" style="color: white;"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
-            </div>
+                <div class="botaoAbrireFechar">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left" style="color: white;"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                </div>
                 <!-- Header -->
                 <div class="mainHeader">
                     <div class="titulo" id="tit">
                         <div class="nomePag">
-                            <p>Minha Casa</p>
+                            <p>Vizinhança</p>
 
                         </div>
                         <div class="finalidPag">
-                            <p >Tudo sobre sua residência</p>
+                            <p >O que acontece ao seu redor</p>
                         </div>
 
                     </div>
@@ -164,14 +169,14 @@
                         checked="checked"/>
                     <label for="slide-item-1">
                         <span>Classificados</span></label>
-    
+
                     <!-- Item 2 -->
                     <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
                     <label for="slide-item-2">
                         <span>Meus Itens</span></label>
-    
+
                     <div class="clear"></div>
-    
+
                     <!-- Bar -->
                     <div class="slider">
                         <div class="bar"></div>
@@ -179,13 +184,13 @@
                 </nav>
 
                 <nav class="navbar navbar-light campo-pesquisa" id="areaFiltro">
-              
+
                     <div class="nomeCampoPesquisa">
                         Filtrar Classificados
                     </div>
                     <div class="areaCamposGrandes">
                         <div class="campoSearch" style="width: 30%;">
-                            <form class="form-inline" >
+                            <form class="form-inline">
                                 <input
                                     class="form-control"
                                     style="width: 100%;"
@@ -194,32 +199,54 @@
                                     aria-label="Search">
                             </form>
                         </div>
-                        <div class="btn-group"style="width: 30%;">
-                            <button class="btn btn-secondary text-left btn-sm" id="btn-pesquisa"  style="width: 100%;" type="button">
-                              Categoria
+                        <div class="btn-group" style="width: 30%;">
+                            <button
+                                class="btn btn-secondary text-left btn-sm"
+                                id="btn-pesquisa"
+                                style="width: 100%;"
+                                type="button">
+                                Categoria
                             </button>
-                            <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="btn-pesquisa" style="width: 20%;"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Manutenção</a>
-                                <a class="dropdown-item" href="#">Festas</a>
-                                <a class="dropdown-item" href="#">Aulas</a>
-                            </div>
-                          </div>
-                          <div class="btn-group" style="width: 30%;">
-                            <button class="btn btn-secondary text-left btn-sm" id="btn-pesquisa" style="width: 100%;" type="button">
-                              Tipo
-                            </button>
-                            <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="btn-pesquisa" style="width:20%;"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                id="btn-pesquisa"
+                                style="width: 20%;"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Manutenção</a>
                                 <a class="dropdown-item" href="#">Festas</a>
                                 <a class="dropdown-item" href="#">Aulas</a>
                             </div>
-                          </div>
+                        </div>
+                        <div class="btn-group" style="width: 30%;">
+                            <button
+                                class="btn btn-secondary text-left btn-sm"
+                                id="btn-pesquisa"
+                                style="width: 100%;"
+                                type="button">
+                                Tipo
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split"
+                                id="btn-pesquisa"
+                                style="width:20%;"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Manutenção</a>
+                                <a class="dropdown-item" href="#">Festas</a>
+                                <a class="dropdown-item" href="#">Aulas</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="areaBotaoSearch">
                         <button class="btn  my-2 my-sm-0" id="botaoSearch" type="submit">Filtrar</button>
@@ -227,120 +254,312 @@
                 </nav>
 
                 <!-- area do centro da tela -->
-            <div class="centroTelaClassificados">
+                <div class="centroTelaClassificados">
 
-                <!-- div para organizar os cards -->
-                <div class="listaClassificados">
+                    <!-- div para organizar os cards -->
+                    <div class="listaClassificados">
 
-                    <!-- cards dos classificados -->
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/aulas violão.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Aulas de Violão</div>
-                            <div class="card-subtitulo">Juliana B. (B-74)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet, consectetur
+                        <!-- cards dos classificados -->
+
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/aulas violão.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Aulas de Violão</div>
+                                <div class="card-subtitulo">Juliana B. (B-74)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet, consectetur
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- estrutura do modal -->
+                                    <div
+                                        class="modal fade"
+                                        id="exampleModal"
+                                        tabindex="-1"
+                                        role="dialog"
+                                        aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body" id="corpo-modal">
+
+                                                    <!-- dados do centro do modal (quando abre o anuncio) -->
+                                                    <div class="cardy mb-3" id="cardModal">
+                                                        <h4 class="card-title">Passeador de Cães</h4>
+                                                        <div class="row no-gutters">
+
+                                                            <div class="col-md-4 text-left" id="fotoItem">
+                                                                <img src="./img/detalhes/dog.jpg" class="card-img" alt="...">
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error
+                                                                    necessitatibus veniam doloremque veritatis dolorum fuga, dignissimos commodi
+                                                                    quia beatae cupiditate temporibus ducimus saepe facilis perspiciatis quasi
+                                                                    soluta laudantium totam!</p>
+                                                            </div>
+                                                            <div class="linha-vertical"></div>
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <div class="dadosUser">
+                                                                        <div class="imagemUser">
+                                                                            <img src="img/detalhes/user.jpg" id="user"/>
+                                                                        </div>
+                                                                        <div class="nomeUser">
+                                                                            <h4>Gustavo Nóbrega</h4>
+                                                                            <p>Apartamento B-74
+                                                                            </p>
+                                                                            <p>Morador desde: Jan/2018
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="interesses">
+                                                                        <h6>Interesses</h6>
+                                                                        <button>Futebol</button>
+                                                                        <button>Música</button>
+                                                                        <button>Cozinha</button>
+                                                                        <button>Cachorros</button>
+
+                                                                    </div>
+                                                                    <div class="quemSou">
+                                                                        <h6>Quem sou eu?</h6>
+                                                                        <p class="card-text text-left">Lorem ipsum dolor sit amet consectetur,
+                                                                            adipisicing elit. Voluptatem quaerat maxime autem iste debitis, totam
+                                                                            temporibus, nisi voluptate inventore nemo unde enim expedita doloremque quo rem
+                                                                            error tempore ad eveniet!</p>
+
+                                                                    </div>
+                                                                    <div class="icones">
+
+                                                                        <img src="./img/icon/mail.svg" alt="">
+                                                                        <img src="./img/icon/whatsApp.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card que abre quando clica -->
+                        <!-- esta todo dentro de um buttom -->
+                        <div class="cardBotao">
+                            <button
+                                type=""
+                                class=""
+                                id="botaoClassificado"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                                <div class="card">
+                                    <img
+                                        class="card-img-top"
+                                        src="./img/classificados/assistência.png"
+                                        alt="Imagem de capa do card">
+                                    <div class="card-corpo">
+                                        <div class="card-titulo">Assistência e reparos</div>
+                                        <div class="card-subtitulo">Lucas M. (C-84)</div>
+                                        <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <!-- estrutura do modal -->
+                            <div
+                                class="modal fade"
+                                id="exampleModal"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" id="corpo-modal">
+
+                                            <!-- dados do centro do modal (quando abre o anuncio) -->
+                                            <div class="cardy mb-3" id="cardModal">
+                                                <h4 class="card-title">Passeador de Cães</h4>
+                                                <div class="row no-gutters">
+
+                                                    <div class="col-md-4 text-left" id="fotoItem">
+                                                        <img src="./img/detalhes/dog.jpg" class="card-img" alt="...">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error
+                                                            necessitatibus veniam doloremque veritatis dolorum fuga, dignissimos commodi
+                                                            quia beatae cupiditate temporibus ducimus saepe facilis perspiciatis quasi
+                                                            soluta laudantium totam!</p>
+                                                    </div>
+                                                    <div class="linha-vertical"></div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <div class="dadosUser">
+                                                                <div class="imagemUser">
+                                                                    <img src="img/detalhes/user.jpg" id="user"/>
+                                                                </div>
+                                                                <div class="nomeUser">
+                                                                    <h4>Gustavo Nóbrega</h4>
+                                                                    <p>Apartamento B-74
+                                                                    </p>
+                                                                    <p>Morador desde: Jan/2018
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="interesses">
+                                                                <h6>Interesses</h6>
+                                                                <button>Futebol</button>
+                                                                <button>Música</button>
+                                                                <button>Cozinha</button>
+                                                                <button>Cachorros</button>
+
+                                                            </div>
+                                                            <div class="quemSou">
+                                                                <h6>Quem sou eu?</h6>
+                                                                <p class="card-text text-left">Lorem ipsum dolor sit amet consectetur,
+                                                                    adipisicing elit. Voluptatem quaerat maxime autem iste debitis, totam
+                                                                    temporibus, nisi voluptate inventore nemo unde enim expedita doloremque quo rem
+                                                                    error tempore ad eveniet!</p>
+
+                                                            </div>
+                                                            <div class="icones">
+
+                                                                <img src="./img/icon/mail.svg" alt="">
+                                                                <img src="./img/icon/whatsApp.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/assistência.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Assistência e reparos</div>
+                                <div class="card-subtitulo">Lucas M. (C-84)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/bolo"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Bolo sob encomenda</div>
+                                <div class="card-subtitulo">Maria B. (D-44)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/aulas.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Aulas de Matemática</div>
+                                <div class="card-subtitulo">Paula M. (A-63)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/baba.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Babá</div>
+                                <div class="card-subtitulo">Bárba C. (A-33)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/organizador.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Organizador de Eventos</div>
+                                <div class="card-subtitulo">João A. (D-91)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/marmita.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Mármitas Saudáveis</div>
+                                <div class="card-subtitulo">Antônio O. (C-101)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        </div>
+                        <div class="card classificado">
+                            <img
+                                class="card-img-top"
+                                src="./img/classificados/dog.png"
+                                alt="Imagem de capa do card">
+                            <div class="card-corpo">
+                                <div class="card-titulo">Passeador de Cães</div>
+                                <div class="card-subtitulo">Daniel S. (B-74)</div>
+                                <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/assistência.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Assistência e reparos</div>
-                            <div class="card-subtitulo">Lucas M. (C-84)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/bolo"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Bolo sob encomenda</div>
-                            <div class="card-subtitulo">Maria B. (D-44)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/aulas.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Aulas de Matemática</div>
-                            <div class="card-subtitulo">Paula M. (A-63)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/baba.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Babá</div>
-                            <div class="card-subtitulo">Bárba C. (A-33)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/organizador.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Organizador de Eventos</div>
-                            <div class="card-subtitulo">João A. (D-91)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/marmita.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Mármitas Saudáveis</div>
-                            <div class="card-subtitulo">Antônio O. (C-101)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
-                    <div class="card classificado">
-                        <img
-                            class="card-img-top"
-                            src="./img/classificados/dog.png"
-                            alt="Imagem de capa do card">
-                        <div class="card-corpo">
-                            <div class="card-titulo">Passeador de Cães</div>
-                            <div class="card-subtitulo">Daniel S. (B-74)</div>
-                            <div class="descricaoCard">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                    </div>
                 </div>
-            </div>
 
-          
-            <footer class="py-2 footer">
-                <div class="container text-center" id="footerText">
-                    <p class="m-0">
-                        Portal do Condomínio | ST02G3-2020
-                        <img src="imagens/favicon.png" width="30" alt=""/>
-                    </p>
-                </div>
-            </footer>       
-           
+                <footer class="py-2 footer">
+                    <div class="container text-center" id="footerText">
+                        <p class="m-0">
+                            Portal do Condomínio | ST02G3-2020
+                            <img src="imagens/favicon.png" width="30" alt=""/>
+                        </p>
+                    </div>
+                </footer>
 
             </div>
-            
 
         </div>
-  
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script

@@ -71,6 +71,7 @@ a:hover {
 #sidebar .sidebar-header {
     padding-top: 20px;
     background: #3B3B3B;
+    border-radius: 0 25px 0 0;
 }
 
 #sidebar ul.components {
@@ -208,15 +209,17 @@ a.article:hover {
 
 .mainHeader > div {
 
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     align-items: center;
 
 }
 .titulo {
+    width: 70%;
     display: flex;
 }
 .avatar {
+    width: 30%;
     justify-content: flex-end;
     font-family: 'Lato-Ligth';
     font-size: 20px;
@@ -287,6 +290,7 @@ a.article:hover {
     }
 
     .mainHeader {
+        padding-top: 20px;
         padding-left: 40px;
         padding-right: 40px;
 
@@ -310,7 +314,6 @@ a.article:hover {
 
 .slidemenu {
     max-width: 100%;
-    /* padding-top: 20px; */
     overflow: hidden;
     font-size: 25px;
 }
